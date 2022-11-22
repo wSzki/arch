@@ -1,0 +1,10 @@
+[Unit]
+Description=Cron after wake
+After=suspend.target hibernate.target hybrid-sleep.target
+
+[Service]
+User=wsz
+ExecStart=/bin/cronwhip
+
+[Install]
+WantedBy=suspend.target hibernate.target hybrid-sleep.targetantedBy=sleep.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=wszufw
+
+[Service]
+ExecStart=/home/wsz/.dot/sys/ufw.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=wszaudio
+ 
+[Service]
+ExecStart=/home/wsz/.dot/sys/audio.sh
+ 
+[Install]
+WantedBy=multi-user.target

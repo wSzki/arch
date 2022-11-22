@@ -1,0 +1,6 @@
+
+
+#cp to /etc/udev/rules.d/
+
+#Suspend the system when battery level drops to 5% or lower
+SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{model_name}=="45N1113", ATTR{capacity}=="[0-5]", RUN+="/usr/bin/systemctl suspend"

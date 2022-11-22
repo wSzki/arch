@@ -1,0 +1,7 @@
+#/etc/systemd/network/50-enp0s26u1u2.network
+# udevadm info /sys/class/net/enp0s26u1u2
+[Match]
+Name=enp0s20f0u1
+
+[Network]
+DHCP=ipv4
